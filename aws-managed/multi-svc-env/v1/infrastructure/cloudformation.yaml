@@ -85,11 +85,11 @@ Resources:
     Properties:
       SubnetId: !Ref PublicSubnetTwo
       RouteTableId: !Ref PublicRouteTable
-  # PublicSubnetThreeRouteTableAssociation:
-  #     Type: AWS::EC2::SubnetRouteTableAssociation
-  #     Properties:
-  #       SubnetId: !Ref PublicSubnetThree
-  #       RouteTableId: !Ref PublicRouteTable
+  PublicSubnetThreeRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnetThree
+      RouteTableId: !Ref PublicRouteTable
 
   # ECS Resources
   ECSCluster:
