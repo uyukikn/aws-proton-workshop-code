@@ -70,7 +70,7 @@ Resources:
       Cluster: '{{environment.outputs.ClusterName}}'
       CapacityProviderStrategy:
         - CapacityProvider: FARGATE_SPOT
-          Weight: 1
+          Weight: 2
       DeploymentConfiguration:
         MaximumPercent: 200
         MinimumHealthyPercent: 75
